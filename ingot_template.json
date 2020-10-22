@@ -5,7 +5,7 @@
 	"crafting": {
 		"smelting": -1.0,
 		"compress": {
-			"type": "shaped",
+			"type": "crafting_shaped",
 			"pattern": [
 				"XrX",
 				"r-r",
@@ -26,7 +26,7 @@
 			"amount": 1
 		},
 		"uncompress": {
-			"type": "shapeless",
+			"type": "crafting_shapeless",
 			"ingredients": [
 				{
 					"item": "<modid>:<item_id>:<metadata|-1>"
