@@ -1,0 +1,52 @@
+{
+	"register": "<lingot_id>",
+	"hasDust": false,
+	"hasBlock": false,
+	"crafting": {
+		"smelting": -1.0,
+		"compress": {
+			"type": "shaped",
+			"pattern": [
+				"XrX",
+				"r-r",
+				"XrX"
+			],
+			"ingredients": {
+				"X": "<modid>:<item_id>:<metadata|-1>",
+				"r": "<modid>:<item_id>:<metadata|-1>",
+				"-": "ore:<entry>"
+			},
+			"amount": 1
+		}
+		"uncompress": {
+			"type": "shapeless",
+			"ingredients": [
+				"<modid>:<item_id>:<metadata|-1>",
+				"<modid>:<item_id>:<metadata|-1>",
+				"ore:<entry>"
+			],
+			"amount": 1
+		}
+	},
+	"exnihilocreatio": {
+		"addItems": false,
+		"compressionRate": 4,
+		"modSieve": {
+			"enabled": false,
+			"<modid>:<item_id>:<metadata|-1>...": {
+				"drop": "<modid>:<item_id>:<metadata|-1>",
+				"count": 1,
+				"chance": 0.85,
+				"tier": 1
+			}
+		}
+	},
+	"extendedcrafting": {
+		"modSingularity": {
+			"enabled": false,
+			"color": "#codeCouleur",
+			"compression": "ingot|12000",
+			"catalyst": "extendedcrafting:material:11"
+		}
+	}
+}
