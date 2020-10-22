@@ -11,19 +11,33 @@
 				"r-r",
 				"XrX"
 			],
-			"ingredients": {
-				"X": "<modid>:<item_id>:<metadata|-1>",
-				"r": "<modid>:<item_id>:<metadata|-1>",
-				"-": "ore:<entry>"
+			"key": {
+				"X": {
+					"item": "<modid>:<item_id>:<metadata|-1>"
+				},
+				"r": {
+					"item": "<modid>:<item_id>:<metadata|-1>"
+				},
+				"-": {
+					"type": "forge:ore_dict",
+					"ore": "<entry>"
+				}
 			},
 			"amount": 1
-		}
+		},
 		"uncompress": {
 			"type": "shapeless",
 			"ingredients": [
-				"<modid>:<item_id>:<metadata|-1>",
-				"<modid>:<item_id>:<metadata|-1>",
-				"ore:<entry>"
+				{
+					"item": "<modid>:<item_id>:<metadata|-1>"
+				},
+				{
+					"item": "<modid>:<item_id>:<metadata|-1>"
+				},
+				{
+					"type": "forge:ore_dict",
+					"ore": "<entry>"
+				}
 			],
 			"amount": 1
 		}
